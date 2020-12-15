@@ -46,7 +46,7 @@ public class Department {
         return numberOfEmployees;
     }
 
-    public void setNoOfEmployees(int numberOfEmployees) {
+    public void setNumberOfEmployees(int numberOfEmployees) {
 
         this.numberOfEmployees = numberOfEmployees;
     }

@@ -16,11 +16,11 @@ public class GeneralNewsTest {
     }
 
     @Test
-    public void instantiatesGeneralnewsDetails() throws Exception{
+    public void instantiatesGeneralNewsDetails() throws Exception{
         GeneralNews testGeneralNews = setUpGeneralNews();
         assertEquals("TeamWork", testGeneralNews.getTitle());
         assertEquals("GoodWork", testGeneralNews.getNews());
-        assertEquals("Eve", testGeneralNews.getAuthor());
+        assertEquals("Glory", testGeneralNews.getAuthor());
     }
 
     @Test
@@ -32,6 +32,6 @@ public class GeneralNewsTest {
 
     //    helper
     public GeneralNews setUpGeneralNews(){
-        return new GeneralNews("TeamWork", "GoodWork", "Eve");
+        return new GeneralNews("TeamWork", "GoodWork", "Glory");
     }
 }

@@ -4,15 +4,15 @@ import java.util.Objects;
 
 public class Users {
     private int id;
-    private String Name;
-    private String Position;
-    private String Role;
+    private String name;
+    private String position;
+    private String role;
     private int departmentId;
 
     public Users(String Name, String Position, String Role, int departmentId) {
-        this.Name = Name;
-        this.Position = Position;
-        this.Role = Role;
+        this.name = name;
+        this.position = position;
+        this.role = role;
         this.departmentId = departmentId;
     }
 
@@ -26,29 +26,29 @@ public class Users {
         this.id = id;
     }
 
-    public String Name() {
-        return Name;
+    public String getName() {
+        return name;
     }
 
     public void setName(String Name) {
-        this.Name = Name;
+        this.name = name;
     }
 
     public String getPosition() {
-        return Position;
+        return position;
     }
 
     public void setPosition(String Position) {
 
-        this.Position = Position;
+        this.position = position;
     }
 
     public String getRole() {
-        return Role;
+        return role;
     }
 
     public void setRole(String Role) {
-        this.Role = Role;
+        this.role = role;
     }
 
     public int getDepartmentId() {

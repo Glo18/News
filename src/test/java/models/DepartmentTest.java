@@ -36,7 +36,7 @@ public class DepartmentTest {
         assertEquals(4,testDepartment.getId());
     }
 
-    public Department SetUpDepartments() {
+    public Department SetUpDepartment() {
         return new Department("production", "valuation", 0);
 
     }

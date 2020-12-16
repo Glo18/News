@@ -10,5 +10,8 @@ public interface UsersDao {
 
     // Read
     List<Users> getAllUsers();
+
+    List<Users> getAllUser();
+
     Users getUserById(int id);
 }

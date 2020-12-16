@@ -16,7 +16,7 @@ public class Sql2oUsersDao implements UsersDao {
 
     @Override
     public void add(Users users) {
-        String sql = "INSERT INTO users (username, userPosition, userRole, departmentId) VALUES (:username, :userposition, :userrole, :departmentId)";
+        String sql = "INSERT INTO users (name, position, role, departmentId) VALUES (:name, :position, :role, :departmentId)";
         try (Connection con = sql2o.open()){
             int id = (int) con.createQuery(sql, true)
                     .throwOnMappingFailure(false)
@@ -29,6 +29,11 @@ public class Sql2oUsersDao implements UsersDao {
                     .getKey();
             users.setId(id);
         }
+    }
+
+    @Override
+    public List<Users> getAllUsers() {
+        return null;
     }
 
     @Override

@@ -1,2 +1,2 @@
-DROP DATABASE department_test;
 DROP DATABASE department;
+DROP DATABASE  department_test;

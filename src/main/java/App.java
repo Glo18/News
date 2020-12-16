@@ -106,7 +106,7 @@ public class App {
 
         get("/department/:id", "application/json", (req, res) -> {
             int departmentId = Integer.parseInt(req.params("id"));
-            Department departmentToFind = DepartmentDao.getDepartmentById(deparmentId );
+            Department departmentToFind = DepartmentDao.getDepartmentById(departmentId );
             if (departmentToFind == null){
                 throw new ApiException(404, String.format("No department with the id: \"%s\" exists", req.params("id")));
             }

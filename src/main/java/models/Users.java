@@ -10,9 +10,9 @@ public class Users {
     private int departmentId;
 
     public Users(String Name, String Position, String Role, int departmentId) {
-        this.name = name;
-        this.position = position;
-        this.role = role;
+        this.name = Name;
+        this.position = Position;
+        this.role = Role;
         this.departmentId = departmentId;
     }
 

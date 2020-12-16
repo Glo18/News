@@ -18,8 +18,8 @@ public class Sql2oDepartmentDaoTest {
 
     @Before
     public void setUp() throws Exception {
-        String connectionString = "jdbc:postgresql://localhost:5432/departments_test";
-        Sql2o sql2o = new Sql2o(connectionString, "glory", "g@twiri");
+        String connectionString = "jdbc:postgresql://localhost:5432/department_test";
+        Sql2o sql2o = new Sql2o(connectionString, "glory", "myPassword");
         UsersDao = new Sql2oUsersDao(sql2o);
         DepartmentDao = new Sql2oDepartmentDao(sql2o);
         conn = sql2o.open();
